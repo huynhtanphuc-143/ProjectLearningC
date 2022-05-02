@@ -1,8 +1,8 @@
-#ifndef BUBBLE_SORT_H
-#define BUBBLE_SORT_H
+#ifndef FUNCTION_H
+#define FUNCTION_H
 
-#include "swap.h"
+void bubbleSort(int array[], int length);
 
-extern void bubbleSort(int array[], int length);
+void insertionSort(int array[], int length);
 
-#endif // BUBBLE_SORT
+#endif // FUNCTION_H

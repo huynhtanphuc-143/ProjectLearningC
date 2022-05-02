@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include <stdio.h>
 #include "Function.h"
 #include "swap.h"
 
@@ -7,8 +7,9 @@ int leng = sizeof(a)/sizeof(int);
 
 int main(void)
 {
-    bubbleSort(a, leng);
-
+    //bubbleSort(a, leng);
+    insertionSort(a, leng);
+    
     int k;
     for (k = 0; k < 7; k++)
     {

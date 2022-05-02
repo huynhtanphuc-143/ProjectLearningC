@@ -1,5 +1,10 @@
-#include "stdio.h"
 #include "swap.h"
+
+/*******************************************************************************
+* Function:   bubbleSort                                                       *
+*                                                                              *
+* Decription: Bubble Sort                                                      *
+*******************************************************************************/
 
 void bubbleSort(int array[], int length)
 {
@@ -16,3 +21,22 @@ void bubbleSort(int array[], int length)
     }
 }
 
+/*******************************************************************************
+* Function:   insertionSort                                                    *
+*                                                                              *
+* Decription: Insertion Sort                                                   *
+*******************************************************************************/
+
+void insertionSort(int array[], int length)
+{
+    int i, j;
+    for (i = 1; i <= length-1; i++)
+    {
+        j = i;
+        while(j > 0 && array[j-1] > array[j])
+        {
+            swap(&array[j-1], &array[j]);
+            j = j-1;
+        }
+    }
+}
