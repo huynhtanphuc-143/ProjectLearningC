@@ -2,19 +2,19 @@
 #include "Function.h"
 #include "swap.h"
 
-int a[] = {1, 8, 3, 4, 9, 6, 7};
+int a[] = {3, 5, 7, 9, 1, 2, 4, 6, 8, 0};
 int leng = sizeof(a)/sizeof(int);
 
 int main(void)
 {
     //bubbleSort(a, leng);
     insertionSort(a, leng);
+    //selectionSort(a, leng);
     
-    int k;
-    for (k = 0; k < 7; k++)
-    {
-        printf("%d ", a[k]);
-    }
-
+    //reverse(a, leng);
+    print(a, leng);
+    
     return 0;
 }
+
+//EOL

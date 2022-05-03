@@ -4,3 +4,5 @@
 void swap(int *NumberA, int *NumberB);
 
 #endif // SWAP_H
+
+//EOL
