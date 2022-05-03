@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include <stdio.h>
 
 void swap(int *NumberA, int *NumberB)
 {
@@ -6,3 +6,5 @@ void swap(int *NumberA, int *NumberB)
     *NumberB = *NumberA - *NumberB;
     *NumberA = *NumberA - *NumberB;
 }
+
+//EOL
