@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include "swap.h"
+
+void swap(int *NumberA, int *NumberB);
 
 /*******************************************************************************
 * Function:   print                                                            *
@@ -100,4 +101,16 @@ void reverse(int array[], int length)
     }
 }
 
+/*******************************************************************************
+* Function:   SWAP                                                             *
+*                                                                              *
+* Decription: swap location of two variables                                   *
+*******************************************************************************/
+
+void swap(int *NumberA, int *NumberB)
+{
+    *NumberA = *NumberA + *NumberB;
+    *NumberB = *NumberA - *NumberB;
+    *NumberA = *NumberA - *NumberB;
+}
 //EOL

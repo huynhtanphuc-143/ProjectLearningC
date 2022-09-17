@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=00000000a0000000001000000
-UnitCount=5
+UnitCount=6
 
 [VersionInfo]
 Major=1
@@ -80,8 +80,28 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
+[Unit7]
+FileName=Type.h
+CompileCpp=0
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit6]
+FileName=Cfg.h
+CompileCpp=0
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
 [Unit4]
-FileName=swap.c
+FileName=Type.h
 CompileCpp=0
 Folder=
 Compile=1
@@ -91,7 +111,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit5]
-FileName=swap.h
+FileName=Cfg.c
 CompileCpp=0
 Folder=
 Compile=1

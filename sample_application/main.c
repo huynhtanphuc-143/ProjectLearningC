@@ -1,18 +1,30 @@
 #include <stdio.h>
 #include "Function.h"
-#include "swap.h"
+#include "Cfg.h"
+#include "Type.h"
 
-int a[] = {3, 5, 7, 9, 1, 2, 4, 6, 8, 0};
-int leng = sizeof(a)/sizeof(int);
+int ArrayExample[] = {3, 5, 7, 9, 1, 2, 4, 6, 8, 0};
+int LengOfArray = sizeof(ArrayExample)/sizeof(int);
+int NumEngineer;
 
 int main(void)
 {
-    //bubbleSort(a, leng);
-    insertionSort(a, leng);
-    //selectionSort(a, leng);
+    //bubbleSort(ArrayExample, LengOfArray);
+    insertionSort(ArrayExample, LengOfArray);
+    //selectionSort(ArrayExample, LengOfArray);
+    //reverse(ArrayExample, LengOfArray);
+    print(ArrayExample, LengOfArray);
 
-    //reverse(a, leng);
-    print(a, leng);
+#if NAME == PHUC
+    NumEngineer = ePHUC;
+#elif NAME == NAM
+    NumEngineer = eNAM;
+#else
+#error "Please update marco NAME."
+#endif
+    printf("\nAge of %d: %d", Engineer[NumEngineer].ID,
+        Engineer[NumEngineer].age);
+    printf("\nResult: %d", POW(2, 3));
 
     return 0;
 }
